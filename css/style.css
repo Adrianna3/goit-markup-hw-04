@@ -232,10 +232,17 @@ margin-left: auto;
 }
 
 .button {
- background :#2F303A;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../images/background.jpg");
   height: 37.5rem;
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
 }
 
 /*================END BUTTON================ */
@@ -315,13 +322,14 @@ margin-left: auto;
     font-size: 16px;
     line-height: 1.187;
     text-align: center;
+    margin-bottom: 16px;
 
     color: rgba(117, 117, 117, 0.63);    
 }
 
 .staff-list-item{  
     width: 270px;
-    height: 368px;
+    height: 428px;
     left: 815px;
     top: 1635px;
 
@@ -331,6 +339,40 @@ margin-left: auto;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.social-list-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill:  #AFB1B8;
+    /* padding-left: 32px; */
+    
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus{
+    fill: #FFFFFF;
+    background-color: var(--main-color);
+}
+
+
 /*================END STAFF================ */
 
 /*================FOOTER================ */
@@ -371,6 +413,63 @@ margin-left: auto;
  .footer-mail,
 .footer-phone-number{
 color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .container{
+    display: flex;
+}
+
+.right-footer{
+    padding-left: 70px;
+    padding-top: 12px;
+}
+.right-footer-h4{
+    position: absolute;
+    width: 113px;
+    height: 16px;
+    left: 531px;
+    top: 2751px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+color: #FFFFFF;
+}
+
+    .social-list-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.social-list-link-footer{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill:  #FFFFFF;
+    /* padding-left: 32px; */
+    
+}
+
+.social-icon-footer{
+    width: 20px;
+    height: 20px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus{
+    fill: #FFFFFF;
+    background-color: var(--main-color);
 }
 
 /*================END FOOTER================ */
@@ -480,14 +579,29 @@ height: 38px;
   gap: 30px;
 }
 
+.project-list-item{
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    height: 404px;
+}
+
+.project-list-item:hover,
+.project-list-item:focus{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;  
+ cursor: pointer;
+}
+
 .third-header-project{
     margin: 0;
     padding-top: 20px;
+    padding-left: 24px;
 }
 
 .staff_p-project{
     margin: 0;
     padding-top: 4px;
+    padding-left: 24px;
 }
 
 .model-btn-portfolio:hover,
